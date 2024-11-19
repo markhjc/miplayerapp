@@ -1,199 +1,42 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiPlayer - 使用条款</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+MiPlayer 使用条款
+最后更新：2024 年 10 月 5 日
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }
+1. 接受条款
+下载、安装或使用 MiPlayer（以下简称“应用程序”）即表示您同意遵守这些使用条款。如果您不同意这些条款，请勿使用该应用程序。
 
-        .navbar {
-            background-color: white;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+2. 服务说明
+MiPlayer 是一款视频播放器应用程序，可让用户播放 iOS 设备上本地存储的各种视频格式。该应用程序完全离线运行，不提供任何自己的内容。
 
-        .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+3. 用户责任
+作为 MiPlayer 的用户，您同意：
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #1a73e8;
-            text-decoration: none;
-        }
+仅将应用程序用于合法目的
+不得尝试修改、逆向工程或破解应用程序
+对您通过应用程序播放的所有内容负责
+确保您拥有播放通过应用程序访问的内容所需的权限
+4. 知识产权
+该应用程序，包括其原始内容、特性和功能，归 MiPlayer 所有，并受国际版权、商标、专利、商业秘密和其他知识产权法的保护。
 
-        .nav-links a {
-            color: #666;
-            text-decoration: none;
-            margin-left: 2rem;
-            transition: color 0.3s ease;
-        }
+5. 免责声明
+本应用程序按“原样”和“可用”提供，不提供任何明示或暗示的保证。我们不保证本应用程序始终安全、可靠或无错误，也不保证本应用程序始终无中断、无延迟或无缺陷地运行。
 
-        .nav-links a:hover {
-            color: #1a73e8;
-        }
+6. 责任限制
+在法律允许的最大范围内，MiPlayer 不对任何间接、偶然、特殊、后果性或惩罚性损害，或任何利润或收入损失（无论是直接或间接造成的），或任何数据损失、使用损失、商誉损失或其他因您使用应用程序而导致的无形损失承担责任。
 
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+7. 内容责任
+我们不控制、核实或认可您选择通过应用程序播放的内容。您应自行负责确保您有权播放通过应用程序访问的任何内容。
 
-        h1 {
-            color: #1a73e8;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid #e9ecef;
-        }
+8. 条款变更
+我们保留随时修改或替换这些条款的权利。如果修订内容重大，我们将在任何新条款生效前至少提前 30 天通知。
 
-        h2 {
-            color: #2c3e50;
-            margin: 2rem 0 1rem;
-        }
+9. 年龄限制
+该应用程序不适合 13 岁以下人士使用。使用该应用程序即表示您已年满 13 岁。
 
-        p {
-            margin: 1rem 0;
-            color: #4a5568;
-        }
+10. 终止
+我们可能出于任何原因（包括但不限于您违反条款的情况）立即终止或暂停您对应用程序的访问，无需事先通知或承担任何责任。
 
-        ul {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
+11. 适用法律
+这些条款应受[您的国家/地区]法律的管辖并依其解释，而不考虑其法律冲突条款。
 
-        li {
-            margin: 0.5rem 0;
-            color: #4a5568;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 3rem;
-        }
-
-        .footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        .last-updated {
-            color: #666;
-            font-size: 0.9rem;
-            font-style: italic;
-            margin-top: 2rem;
-            text-align: right;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links a {
-                margin-left: 1rem;
-                font-size: 0.9rem;
-            }
-
-            .container {
-                margin: 1rem;
-                padding: 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="/" class="logo">MiPlayer</a>
-            <div class="nav-links">
-                <a href="/">首页</a>
-                <a href="/download/">下载</a>
-                <a href="/features/">功能</a>
-                <a href="/privacy/">隐私政策</a>
-                <a href="/terms/">使用条款</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- 使用条款内容 -->
-    <div class="container">
-        <h1>使用条款</h1>
-
-        <h2>服务使用规则</h2>
-        <p>欢迎使用MiPlayer应用。使用我们的服务即表示您同意以下条款：</p>
-        <ul>
-            <li>遵守法律法规</li>
-            <li>尊重知识产权</li>
-            <li>不得滥用服务功能</li>
-            <li>遵守用户行为规范</li>
-        </ul>
-
-        <h2>用户责任</h2>
-        <p>作为MiPlayer的用户，您需要：</p>
-        <ul>
-            <li>对账户安全负责</li>
-            <li>合理使用加密功能</li>
-            <li>遵守隐私保护规定</li>
-            <li>不传播违法内容</li>
-        </ul>
-
-        <h2>知识产权</h2>
-        <p>MiPlayer应用的所有权利均归开发者所有，包括但不限于：</p>
-        <ul>
-            <li>软件著作权</li>
-            <li>商标权</li>
-            <li>专利权</li>
-            <li>其他知识产权</li>
-        </ul>
-
-        <h2>免责声明</h2>
-        <p>我们将尽最大努力确保服务的可用性和安全性，但不对以下情况承担责任：</p>
-        <ul>
-            <li>因不可抗力导致的服务中断</li>
-            <li>用户因使用不当造成的损失</li>
-            <li>第三方因素导致的问题</li>
-        </ul>
-
-        <p class="last-updated">最后更新日期：2024年3月1日</p>
-    </div>
-
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div>
-            <a href="/">首页</a>
-            <a href="/privacy/">隐私政策</a>
-            <a href="/terms/">使用条款</a>
-            <a href="/contact/">联系我们</a>
-        </div>
-        <p style="margin-top: 1rem;">© 2024 MiPlayer. 保留所有权利。</p>
-    </footer>
-</body>
-</html>
+12.联系信息
+如果对这些条款有任何疑问，请通过 miplayerapp@outlook.com 与我们联系。
