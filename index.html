@@ -1,156 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiPlayer - 您的隐私安全播放器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MiPlayer 介绍</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
             line-height: 1.6;
             color: #333;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #1a73e8, #0d47a1);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .header p {
-            font-size: 1.2rem;
-            max-width: 600px;
+            background-color: #f5f5f7;
+            padding: 16px;
+            max-width: 640px;
             margin: 0 auto;
-            opacity: 0.9;
         }
 
-        .features {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 24px 0 16px;
+            color: #1d1d1f;
         }
 
-        .feature-card {
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 20px 0 12px;
+            color: #1d1d1f;
         }
 
-        .feature-card:hover {
-            transform: translateY(-5px);
+        p {
+            margin: 12px 0;
+            font-size: 16px;
         }
 
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #1a73e8;
+        ol {
+            padding-left: 24px;
+            margin: 12px 0;
         }
 
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #1a73e8;
+        li {
+            margin: 8px 0;
         }
 
-        .download-section {
-            background-color: #f8f9fa;
-            padding: 60px 20px;
+        .notice {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 16px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .qa-item {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 16px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .qa-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .qa-answer {
+            color: #666;
+        }
+
+        .contact-footer {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 24px 0;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
-        .download-btn {
+        .copy-btn {
             display: inline-block;
-            background-color: #1a73e8;
+            background-color: #007AFF;
             color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            -webkit-appearance: none;
         }
 
-        .download-btn:hover {
-            background-color: #0d47a1;
+        .toast {
+            position: fixed;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            display: none;
+            z-index: 1000;
         }
 
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000;
+                color: #fff;
+            }
+
+            h1, h2 {
+                color: #fff;
+            }
+
+            .notice, .qa-item, .contact-footer {
+                background-color: #1c1c1e;
+            }
+
+            .qa-answer {
+                color: #999;
+            }
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>MiPlayer</h1>
-        <p>您的专属多功能隐私安全播放器</p>
-    </header>
+    <h1>视频盒子功能已迁移到MiPlayer</h1>
+    <p>从8月末到现在，差不多3个月的时间，MiPlayer终于在AppStore上架了一个功能完整的正式版本。</p>
 
-    <section class="features">
-        <div class="feature-card">
-            <div class="feature-icon">📽️</div>
-            <h3>全格式支持</h3>
-            <p>支持几乎所有主流视频格式播放，无需额外解码器，播放体验流畅稳定。</p>
+    <h2>主要功能</h2>
+    <ol>
+        <li><strong>下载功能：</strong>添加了视频盒子中的下载功能，云解析-支持海内外各种短视频平台下载，网页嗅探-支持各种网页视频下载</li>
+        <li><strong>文件管理：</strong>文件加密、文件压缩，私密文件夹，APP密码锁</li>
+        <li><strong>更强大的播放器：</strong>支持三种播放模式-系统播放器、系统视频预览播放、MiPlayer播放器-几乎支持所有音视频格式（但现在播放器页面还很简陋，后续版本再优化）</li>
+        <li><strong>页面和交互改进：</strong>全面适配深色模式，图标也都更新了（更简洁、更清爽）</li>
+    </ol>
+
+    <div class="notice">
+        <p>现在下载功能没有限制，收费策略跟视频盒子一样：非会员也可以下载视频，只是没法完整播放和导出。</p>
+        <p>请视频盒子会员还没到期的朋友私信联系我，我给你在MiPlayer中添加会员功能（视频盒子还继续可用，但后续不再维护）</p>
+    </div>
+
+    <div class="notice">
+        <p>请感兴趣的朋友在AppStore搜索 MiPlayer下载体验。</p>
+        <p>如果有问题请直接给我反馈，请手下留情不要在appstore打差评，感恩～</p>
+    </div>
+
+    <h2>会员优惠</h2>
+    <div class="notice">
+        <p>现在先卖50个优惠会员，99元-会员有效期两年，会员有效期内当前版本和后续新增的所有功能无限制使用。以后不会再有这么低的价格了，名额有限，请感兴趣的朋友微信联系我，我的微信 rjhecho</p>
+    </div>
+
+    <h2>常见问题</h2>
+    <div class="qa-item">
+        <div class="qa-question">1、为什么要收费？</div>
+        <div class="qa-answer">
+            <p>（1）前期投入了大量时间成本</p>
+            <p>从视频盒子到现在的MiPlayer，差不多耗费了我一整年的业余时间，今年国庆节有一半的时间在开发MiPlayer，最近两周差不多晚上两点才睡。这个小工具APP，页面简单，功能也看似简单，但要搞定各种问题做出一个完整可用的产品，真的要花费大量的时间精力。（看着像在卖惨，但所说的都是事实，不过创造产品的过程也挺有趣）</p>
+            <p>（2）每年开发者费用688块，每个月也有固定的服务器成本。如果不收费，产品没法持续运营。</p>
         </div>
+    </div>
 
-        <div class="feature-card">
-            <div class="feature-icon">🔐</div>
-            <h3>隐私保护</h3>
-            <p>内置启动密码保护，私密文件夹加密存储，让您的隐私安全无忧。</p>
+    <div class="qa-item">
+        <div class="qa-question">2、为什么不卖永久会员？</div>
+        <div class="qa-answer">
+            <p>虽然APP需要用到服务器会持续产生服务器费用，但运营费用倒不是主要的考虑因素，最主要的还是"永远"太遥远了，"永久会员"潜在的意思就是终身可用，但我根本没法保证这个APP永久可用，卖永久会员给我很大的心理压力。如果收了终身会员费，要是哪天跑路了对于用户来说也是一种伤害。</p>
         </div>
+    </div>
 
-        <div class="feature-card">
-            <div class="feature-icon">🗂️</div>
-            <h3>文件加密</h3>
-            <p>支持文件加密传输功能，确保您的重要数据在分享时万无一失。</p>
+    <div class="qa-item">
+        <div class="qa-question">3、万一APP被下架了是否还能用？</div>
+        <div class="qa-answer">
+            <p>能。只要APP安装到了手机，哪怕被苹果从商店下架了还能继续用。网页视频下载不依赖服务器，哪怕我以后都不更新这APP了网页视频下载、播放器、私密文件夹都还能用。我现在只卖两年会员，我可以承诺两年内服务器会一直维护。</p>
         </div>
+    </div>
 
-        <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>极致性能</h3>
-            <p>优化的解码引擎，超低内存占用，给您流畅的播放体验。</p>
-        </div>
+    <div class="contact-footer">
+        <p>如有问题请联系我微信：rjhecho</p>
+        <button class="copy-btn" onclick="copyWechat()">复制微信号</button>
+    </div>
 
-        <div class="feature-card">
-            <div class="feature-icon">📱</div>
-            <h3>便携使用</h3>
-            <p>界面简洁直观，操作便捷，随时随地享受高品质视频播放。</p>
-        </div>
+    <div id="toast" class="toast">已复制到粘贴板</div>
 
-        <div class="feature-card">
-            <div class="feature-icon">🛡️</div>
-            <h3>安全可靠</h3>
-            <p>采用先进的加密技术，保护您的私密内容安全。</p>
-        </div>
-    </section>
-
-    <section class="download-section">
-        <h2>立即体验 MiPlayer</h2>
-        <p>下载全新版本，享受安全私密的播放体验</p>
-        <a href="#" class="download-btn">免费下载</a>
-    </section>
-
-    <footer class="footer">
-        <p>© 2024 MiPlayer. 保留所有权利。</p>
-    </footer>
+    <script>
+        function copyWechat() {
+            navigator.clipboard.writeText('rjhecho').then(() => {
+                const toast = document.getElementById('toast');
+                toast.style.display = 'block';
+                setTimeout(() => {
+                    toast.style.display = 'none';
+                }, 2000);
+            });
+        }
+    </script>
 </body>
 </html>
